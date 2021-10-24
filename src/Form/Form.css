@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #696969;
+}
+body {
+  background-color: #e9e6e6;
+}
+#root {
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border: none;
+  border-bottom: #696969 solid 3px;
+  background: transparent;
+  width: 100%;
+  padding: 3px;
+}
+input:focus {
+  outline: none;
+  transform: scale(1.01);
+}
+
+.form-success {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  margin-top: 80px;
+  color: rgb(11, 170, 32);
+}
+
+.authorization {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  align-self: center;
+  margin-top: 100px;
+}
+.authorization__header {
+  font-size: 30px;
+  font-weight: 700;
+}
+.authorization input {
+  margin: 10px 20px;
+}
+.authorization__btn {
+  border: none;
+  background-color: #696969;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  padding: 5px 25px;
+  align-self: flex-end;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.authorization__btn:disabled {
+  background-color: #e9e6e6;
+}
+
+.email-error,
+.password-error {
+  color: #ff0000;
+  font-size: 16px;
+}
